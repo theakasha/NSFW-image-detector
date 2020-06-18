@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Not Safe For Work Image Detection App</title>
+ 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="../static/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href="../static/style.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="btn"><a href="https://github.com/rishav1802?tab=repositories">Rishav1802</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Not Safe For Work Image Detection App</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>Upload your image</h1>
+            <p class="lead"></p>
+	       <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+            <input id="file-picker" type="file" name="file" accept="image/*" class="hidden" onchange="this.form.submit()">
+            <label for="file-picker" class="btn btn-lg btn-success">Select file</label>
+         </form>
+         
+        </div>
+ 
+        <div class="row marketing">
+            <div class="col-lg-6">
+                <h4>Predict</h4>
+                <p>Predict the NSFW Score :</p>
+            </div>
+ 
+            
+        </div>
+ 
+        <footer class="footer">
+            <p>&copy;#rishav1802 . Using Python, Flask, PIL, Tensorflow</p>
+            <p>Artificial Intelligence for Internet of Tomorrow</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
+
