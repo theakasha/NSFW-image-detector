@@ -2,7 +2,7 @@
 # NSFW-detector
 Demo https://hy1al8aeg7.execute-api.ap-south-1.amazonaws.com/dev   
  What it does?  
-It detects Not Safe For Work Images by calculating a NSFW score and classifying them into five categories:     Drawing,Hentai,Neutral,Porn,Sexy.Images can be uploaded directly from the client's computer or using a GET request with the source of the image.  
+It detects Not Safe For Work Images by calculating a NSFW score and classifying them into five categories:     Drawing,Hentai,Neutral,Porn,Sexy.Images can be uploaded directly from the client's computer or through a GET request with the source of the image.  
 
 What is it?  
 It's a Convolutional Neural Network model deployed using Flask ,tensorflow-lite and hosted on AWS lambda using zappa.
