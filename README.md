@@ -11,7 +11,7 @@ It's a Convolutional Neural Network model deployed using Flask ,tensorflow-lite 
 * The inception v3 model is trained and finetuned on the dataset.  
 
 * To make sure the deployment package size is within the memory limits of aws lambda,I converted my model from tensorflow to tensorflow lite. For installing just the tf-lite interpreter check the official documentation https://www.tensorflow.org/lite/guide/python  
-* For installing tf-lite dependencies on lambda : https://www.reddit.com/r/aws/comments/93jhgi/how_can_i_add_third_party_python_dependencies_to/
+* For installing tf-lite dependencies on lambda, you need to make sure that zappa detects tf-lite. Just copy tf-lite folder from virtualenv/lib/python/site-packages to the top-level folder in lambda : https://www.reddit.com/r/aws/comments/93jhgi/how_can_i_add_third_party_python_dependencies_to/
 The model is present in an s3 bucket and gets downloaded in the predictions.py script using Boto3 to the lambda s3 bucket.
 I built a flask api for serving my model's predictions. Refer to the official flask documentation. 
 
