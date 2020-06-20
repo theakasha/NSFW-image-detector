@@ -6,7 +6,7 @@ It detects Not Safe For Work Images by calculating a NSFW score and classifying 
 eg: https://hy1al8aeg7.execute-api.ap-south-1.amazonaws.com/dev/upload?text=img_src
 
 What is it?  
-It's a Convolutional Neural Network model deployed using Flask ,tensorflow-lite and hosted on AWS lambda using zappa.
+It's a Convolutional Neural Network model deployed using Flask ,tensorflow-lite ,AWS lambda + API gateway using zappa.
 
 * The inception v3 model is trained and finetuned on the dataset.  
 
