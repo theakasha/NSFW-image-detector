@@ -8,7 +8,7 @@ eg: https://hy1al8aeg7.execute-api.ap-south-1.amazonaws.com/dev/upload?text=img_
 What is it?  
 It's a Convolutional Neural Network model deployed using Flask ,tensorflow-lite ,AWS lambda + API gateway using zappa.
 
-* The inception v3 model is trained and finetuned on the dataset.  
+* The inception v3 model is trained and finetuned on the dataset. https://github.com/alex000kim/nsfw_data_scraper .I used transfer learning for training the model.    
 
 * To make sure the deployment package size is within the memory limits of aws lambda,I converted my model from tensorflow to tensorflow lite. For installing just the tf-lite interpreter check the official documentation https://www.tensorflow.org/lite/guide/python  
 * For installing tf-lite dependencies on lambda, you need to make sure that zappa detects tf-lite. Just copy tf-lite folder from virtualenv/lib/python/site-packages to the top-level folder in lambda : https://www.reddit.com/r/aws/comments/93jhgi/how_can_i_add_third_party_python_dependencies_to/
